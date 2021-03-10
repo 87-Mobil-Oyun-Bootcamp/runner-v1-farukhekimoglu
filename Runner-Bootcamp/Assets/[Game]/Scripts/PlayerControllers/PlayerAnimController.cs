@@ -9,7 +9,7 @@ namespace Runner.Player
     public class PlayerAnimController : MonoBehaviour
     {
         private Animator _playerAnimator;
-        private readonly int _isRunning = Animator.StringToHash("isRunning");
+        private readonly int _runningAnim = Animator.StringToHash("isRunning");
 
         private void Awake()
         {
@@ -26,6 +26,6 @@ namespace Runner.Player
             EventManager.PlayerRunning -= RunningAnim;
         }
 
-        private void RunningAnim() => _playerAnimator.SetBool(_isRunning, true);
+        private void RunningAnim(bool isRunning) => _playerAnimator.SetBool(_runningAnim, isRunning);
     }
 }

@@ -8,6 +8,9 @@ namespace Runner.Managers
     {
         private bool _isGameStarted;
 
+
+        //  public static bool GameStarted;
+
         private void Update()
         {
             if (!_isGameStarted)
@@ -18,8 +21,6 @@ namespace Runner.Managers
                     _isGameStarted = true;
                 }
             }
-
-         
         }
     }
 }

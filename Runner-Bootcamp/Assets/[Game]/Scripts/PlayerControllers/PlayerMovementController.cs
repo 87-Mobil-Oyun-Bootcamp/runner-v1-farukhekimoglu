@@ -32,8 +32,7 @@ namespace Runner.Player
         private void StartRunning()
         {
             _isRunning = true;
-            EventManager.PlayerRunning?.Invoke();
-            
+            EventManager.PlayerRunning?.Invoke(_isRunning);
         }
     }
 }
