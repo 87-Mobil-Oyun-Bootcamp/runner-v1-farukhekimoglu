@@ -9,10 +9,8 @@ namespace Runner.Player
     {
         [SerializeField] private float _speed;
         public float Speed => _speed;
-        
-    
-      
+
+        [SerializeField] private float _swerveSpeed;
+        public float SwerveSpeed => _swerveSpeed;
     }
-    
-    
 }

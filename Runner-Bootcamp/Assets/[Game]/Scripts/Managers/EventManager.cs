@@ -10,8 +10,11 @@ namespace Runner.Managers
     {
 
         public static Action GameStarted;  
-        public static Action<bool> PlayerRunning;  
-     
+        public static Action<bool> PlayerRunning;
+        public static Action OnCollect;
+        public static Action LevelFinish;
+        public static Action<int> ShowScore;
+
 
     }
 }
